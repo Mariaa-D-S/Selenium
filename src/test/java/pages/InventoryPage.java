@@ -20,11 +20,4 @@ public class InventoryPage {
         inventoryActions.clickShoppingCartBtn();
     }
 
-//    public void removeBtn(){
-//        inventoryActions.clickRemoveButton();
-//    }
-//
-//    public void checkVisibility(){
-//        inventoryActions.checkItemVisibility();
-//    }
 }

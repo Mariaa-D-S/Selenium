@@ -25,7 +25,6 @@ public class TestLogin {
     public void login(){
         driver.get("https://www.saucedemo.com/");
         loginPage.login("standard_user", "secret_sauce");
-
         String url = driver.getCurrentUrl();
         Assert.assertEquals("https://www.saucedemo.com/inventory.html", url);
     }
@@ -34,9 +33,6 @@ public class TestLogin {
     public void invalidLogin(){
         driver.get("https://www.saucedemo.com/");
         loginPage.login("abrakadabra", "123");
-
-        //String url = driver.getCurrentUrl();
-        //Assert.assertEquals("https://www.saucedemo.com/inventory.html", url);
         Assert.assertTrue("Epic sadface: Username and password do not match any user in this service\n",true);
     }
 
